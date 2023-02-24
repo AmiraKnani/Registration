@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inscription">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSCRIPTION"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Utilisateur"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nom"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="E-MAIL"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="20dp" />
+
+    <RadioButton
+        android:id="@+id/homme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Homme"
+        android:textSize="20dp"
+        android:layout_below="@id/pwd" />
+
+    <RadioButton
+        android:id="@+id/femme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Femme"
+        android:textSize="20dp"
+        android:layout_below="@id/pwd"
+        android:layout_marginLeft="150dp"
+         />
+
+    <CheckBox
+        android:id="@+id/Loisir1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forme et santé"
+        android:textSize="20dp"
+        android:layout_below="@id/homme"
+
+         />
+
+    <CheckBox
+        android:id="@+id/Loisir2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loisirs"
+        android:textSize="20dp"
+        android:layout_below="@id/homme"
+        android:layout_marginLeft="180dp"/>
+
+    <CheckBox
+        android:id="@+id/Loisir3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shopping"
+        android:textSize="20dp"
+        android:layout_below="@id/homme"
+        android:layout_marginLeft="280dp" />
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:text="VALIDER"
+        android:textSize="20dp" />
+
+</RelativeLayout>
